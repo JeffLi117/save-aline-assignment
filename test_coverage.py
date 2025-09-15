@@ -14,8 +14,9 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from scraper import WebScraper
 
-# Test sites from the challenge
+# Test sites from the challenge + additional test blogs
 TEST_SITES = [
+    # Original challenge sites
     "https://quill.co/blog",
     "https://shreycation.substack.com",
     "https://lioness.io",
@@ -26,9 +27,14 @@ TEST_SITES = [
     "https://franchiseki.com",
     "https://interviewing.io/blog",
     "https://nilmamano.com/blog/category/dsa",
-    # Add your own test sites here:
-    # "https://your-blog-site.com",
-    # "https://another-blog.com/blog"
+    
+    # Additional test blogs for better coverage
+    "https://tech.nextroll.com/blog/",
+    "https://blog.booking.com/",
+    "https://medium.com/justeattakeaway-tech",
+    "https://blog.khanacademy.org/engineering/",
+    "https://developer.okta.com/blog/",
+    "https://shopify.engineering/",
 ]
 
 def test_coverage_with_files(urls):
